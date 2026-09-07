@@ -1,0 +1,39 @@
+/* ============================================================================
+   DESIGN TOKENS — colors, type, spacing pulled from the reference audit.
+   Change the brand here and the whole site follows.
+   ========================================================================== */
+:root {
+  /* Palette (audited from the reference + ScaleMotion logo) */
+  --ink: #171717;            /* primary dark surface + dark text            */
+  --ink-deep: #0e0e0e;       /* darkest bands (pricing, footer, newsletter) */
+  --paper: #f5f5f5;          /* light section surface                       */
+  --paper-dim: #e8e8e8;      /* page background / alt light surface         */
+  --white: #ffffff;
+  --accent: #f16a22;         /* ScaleMotion orange (logo mark)              */
+  --accent-soft: #ff8a3d;
+  --line-dark: rgba(23, 23, 23, 0.14);   /* hairline grid on light          */
+  --line-light: rgba(245, 245, 245, 0.12); /* hairline grid on dark         */
+  --muted-dark: rgba(23, 23, 23, 0.6);   /* secondary text on light         */
+  --muted-light: rgba(245, 245, 245, 0.6); /* secondary text on dark        */
+  --ghost-dark: rgba(23, 23, 23, 0.28);  /* watermark text on light         */
+  --ghost-light: rgba(245, 245, 245, 0.16); /* watermark text on dark       */
+
+  /* Type — same families as the reference design */
+  --font-display: 'Sora', sans-serif;        /* huge uppercase headings     */
+  --font-mono: 'IBM Plex Mono', monospace;   /* labels, captions, buttons   */
+  --font-body: 'Geist', 'Inter', sans-serif; /* paragraphs                  */
+
+  /* Display scale (clamps handle desktop → mobile) */
+  --h1: clamp(44px, 7.6vw, 109px);
+  --h2: clamp(38px, 6.7vw, 96px);
+  --h3: clamp(28px, 4.6vw, 68px);
+  --h4: clamp(22px, 3vw, 44px);
+  --display-tracking: -0.05em;
+  --display-leading: 0.92;
+
+  /* Layout */
+  --gutter: clamp(16px, 2.8vw, 40px);
+  --header-h: 60px;
+  --radius-pill: 50px;
+  --max-w: 1600px;
+}
